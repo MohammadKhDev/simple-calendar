@@ -1,0 +1,13 @@
+<app-header></app-header>
+
+<button
+  mat-raised-button
+  color="primary"
+  (click)="openDialog()"
+  class="add-button">
+  Add new appointment
+</button>
+<div class="calendar-container">
+  <router-outlet name="datepicker" class="router-outlet"></router-outlet>
+  <router-outlet name="day" class="router-outlet"></router-outlet>
+</div>
